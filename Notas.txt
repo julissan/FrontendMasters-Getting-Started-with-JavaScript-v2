@@ -1,2 +1,53 @@
-INTRODUCCIÓN
-    Curso complementario con el libro You Don't Know Javascript Yet UP & GOING
+INTRODUCTION
+
+    Teacher: Kyle Simpson (aka getify)
+    Author of the book series You Don't Know Javascript Yet (YDKJSY)
+    The course can be complemented with the book You Don't Know Javascript Yet UP & GOING
+
+    Three main pillars of JS:
+        - Types/Coercion
+        - Scopes/Closures
+        - "this" keyword/Prototypes
+
+PROGRAMMING PRIMER IN JS:
+    - Values: 
+        Numbers (42, 3.14)
+        Strings ("Hello World")
+        Boolean values (true, false)
+        Empty values (null, undefined)
+        Arrays ([1, 2, 3])
+        Objects ({ name: "Juan David" })
+    - Operations
+        Math (3 + 4 = 7, 43 - 1 = 42)
+        String concatenation ("Juan David " + "Lis Santofimio" = "Juan David Lis Santofimio")
+        Boolean negation/complement (!false = true, !true = false)
+        Equality comparison (3.0 == 3 = true, 3 == 4 = false)
+        Less than/more than comparison (3 < 4 = true, 3 > 4 = false)
+        OR operator ( true || false = true, false || false = false)
+        AND operator ( true && true = true, true && false = false)
+    - Types
+        A type is the name given to the kind of value in programming. (at least in JS).
+        "typeof" is an operator that when used on a value will return its type:
+            typeof 42                       // "number"
+            typeof "Hello World"            // "string"
+            typeof true                     // "boolean"
+            typeof undefined                // "undefined"
+            typeof { name: "Juan David" }   // "object"
+            typeof null                     // "object" !?!?
+            typeof [1, 2, 3]                // "object"
+    - Variables
+        
+    - Expressions and Statements
+    - Decisions
+    - Loops
+    - Functions
+
+TYPES & COERCION
+
+SCOPES & CLOSURES
+
+"this" KEYWORD & PROTORYPES
+
+PRACTICE
+
+WRAPPING UP

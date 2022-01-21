@@ -1,4 +1,4 @@
-var student = "Juan David Lis";
+var student = "Juan David Lis Santofimio";
 var githubUsername = "julissan";
 var age = 24;
 
