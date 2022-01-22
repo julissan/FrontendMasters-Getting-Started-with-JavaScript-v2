@@ -124,8 +124,36 @@ PROGRAMMING PRIMER IN JS:
         Interpolated string: A type of string where you can put variable values directly inside of it´, 
         it is denoted using backticks (f.e. `Hello, ${student.name}!`). 
 
-
 TYPES & COERCION
+
+    - Primitive Types:
+
+        "in JavaScript everything is an object." Myth (100% false)
+
+            Undefined           Null? (works in a strange way)
+            String              Function? (subtype of object)
+            Number              Array? (subtype of object)
+            Boolean
+            Object
+            Symbol  
+
+        In JavaScript, variables don't have types, values do. (Different to other languages like Java)
+
+    - NaN:
+
+        
+
+    - New:
+
+    - Coercion:
+
+    - Booleans:
+
+    - Coercion Best Practices:
+
+    - Equality:
+
+    - Types Summary:
 
 SCOPES & CLOSURES
 
