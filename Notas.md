@@ -1,3 +1,7 @@
+FrontendMasters-Getting-Started-with-JavaScript-v2 Kyle Simpson
+
+Class notes and exercises
+
 INTRODUCTION
 
     Teacher: Kyle Simpson (aka getify)
