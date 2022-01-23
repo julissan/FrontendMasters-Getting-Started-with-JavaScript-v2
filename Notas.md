@@ -145,21 +145,73 @@ TYPES & COERCION
 
     - NaN:
 
-        
+        "Not a Number" a special value that is returned when you try to use a non numeric value with numeric operations. (Invalid operation)
+
+        Number.isNaN(value); will help us see if a valid turned into a NaN after an operation returning true in that case, false otherwise. Non numeric values that haven't been in invalidad operations aren't NaN values.
 
     - New:
 
+        Use new (Wrappers):            Don't use new (Conversion type functions):
+            Object()                       String()
+            Array()                        Number()
+            Function()                     Boolean()
+            Date()              
+            RegExp()
+            Error()
+        
     - Coercion:
+
+        Coercion: The way to convert from one type to another.
+
+        The "+" operator is oveloaded and will have a different behavior depending on its operands:
+
+            number + number = number
+            number + string = string
+            string + number = string
+            string + string = string
+
+        When any of the operands is a string, it will convert the numeric types to string a make the concatenation (you can "add" an empty string to a number to turn in into a stirng value).  
 
     - Booleans:
 
+        Falsy: Other values that when converted into boolean become "false".
+        Truthy: Other values that when converted into boolean become "true".
+
+        Falsy:                  Truthy:
+            ""(empty string)        Every other value     
+            0, -0
+            null
+            NaN
+            false
+            undefined
+
     - Coercion Best Practices:
+
+        "A quality JS program embraces coercions, making sure the types involved in every operation are clear".
+         Make "obvious" the types of the things you're using when making coercion, so it can be easily understood by other person that have to read the code.
 
     - Equality:
 
+        == allows coercion (types different)
+        === disallows coercion (types same)
+
+        Coercive Equality: null == undefined
+
     - Types Summary:
 
+        Like every other operation, is coercion helpfulin an equality  comparison or not?
+        You should be making critical thinking decisions for yourself an decide based on the situation you're using it.
+
+        "==" is not about comparisons with unknown types.
+        "==" is about comparisons with known type(s), optionally where conversions are helpful.
+
+        JavaScript has a (dynamic) type system, which uses various forms of coercion for value type conversion, including equality comparisons.
+
+        You simply cannot write quality JS programs without knowing the types involved in your operations.
+
 SCOPES & CLOSURES
+
+    
 
 "this" KEYWORD & PROTORYPES
 
