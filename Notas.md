@@ -211,7 +211,59 @@ TYPES & COERCION
 
 SCOPES & CLOSURES
 
-    
+    - Scopes: 
+
+        The rules for where to look for things (variables).
+
+    - Undefined vs Undeclared: 
+        
+        Undefined: Value of a variable that has been declared, but doesn't have a value assigned.
+        Undeclared: The variable hasn't been declared.
+
+    - Function Expressions:
+
+        Is a function that is assigned as a value somewhere.
+        They can be assigned to variables, passed to other functions as arguments or can be returned by other functions.
+
+        Anonymous Function Expression:
+
+            var clickHandler = function(){
+
+            };
+
+        Named Function expression:
+
+            var keyHandler = function(){
+
+            };
+
+        For clarity it's a good practice to use named function expressions so other persons can understand the code more easily.
+
+    - IIFE: 
+
+        Immediately Invoked Function Expression
+        It's a really common pattern.
+        The function is invoked right after being declared as a value.
+
+        It is it's own scope block (variables declared inside will not affect the variables of the global scope).
+
+        Typically used in places of the code where you need to collect a set of variables and protect them from encroaching the outer scope.
+
+    - Block Scoping with let:
+
+        Insted of IIFEs you can use a curly brace block and declare variables using the keyword "let".
+        It will become it's own scope block.
+        Regularly used inside an "if statement"
+
+        Is a godd practice using it to avoid variables on the global scope accidentally beaing reassigned, the variables should have the smaller scope possible to use them properly.
+
+        Can be a very powerful tool for helping prevent bugs or problems to come back time later after the code was written.
+
+    - Closures:
+
+        Is when a function "remembers" the variables outside of it, even if you pass that function elsewhere.
+        It is only a closure when that function is passed somewhere.
+
 
 "this" KEYWORD & PROTORYPES
 
