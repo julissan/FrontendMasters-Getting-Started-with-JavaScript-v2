@@ -1,6 +1,6 @@
 FrontendMasters-Getting-Started-with-JavaScript-v2 Kyle Simpson
 
-Class notes and exercises
+Class notes and exercises by Juan David Lis Santofimio, Juanuary 2022
 
 INTRODUCTION
 
@@ -263,9 +263,70 @@ SCOPES & CLOSURES
 
         Is when a function "remembers" the variables outside of it, even if you pass that function elsewhere.
         It is only a closure when that function is passed somewhere.
-
+        It's a very important concept in programming
 
 "this" KEYWORD & PROTORYPES
+
+    - "this":
+
+        A function's "this" references the execution context for that call, determined entirely by  how the function was called.
+        Allows to give a function a dynamic context, to use the same function in different contexts baed on how you call the function. (Reusability principle)
+
+        this-aware function: Functions that contain the "this" keyword
+
+        Rules: (to complement the contents of the course, the following definitions were taken from:    https://medium.com/swlh/javascript-this-ac28f8e0f65d#:~:text=Implicit%20Binding%20is%20applied%20when,left%20side%20of%20the%20dot.)
+
+            1. Default Binding/Direct Invocation: This in Default Binding points to the global object. Default binding is applied for standalone functions and is the fallback option for all other types.
+
+            2. Implicit Binding/Method Invocation: Implicit Binding is applied when you invoke a function in an Object using the dot notation. this in such scenarios will point to the object using which the function was invoked. Or simply the object on the left side of the dot.
+
+                2.a Nested Function
+                When a function is nested inside a method of an object, the context of the inner function depends only on its invocation type and not on the outer function’s context.
+
+                2.b Method separated from the object
+                When we copy an object method to a new variable, we are creating a reference to the function.
+
+            3. Explicit Binding/Indirect Invocation: In this method, you can force a function to use a certain object as its this. Explicit Binding can be applied using call(), apply(), and bind().
+
+                call(): Pass in the required object as the first parameter during the function call. The actual parameters are passed after the object.
+
+                apply(): Similar to call() with a difference in the way the actual arguments are passed. Here, the actual arguments are passed as an array.
+
+                bind(): In this method, you create a new function with a fixed this. These types of functions created using bind() are commonly known as bound functions.
+
+            4. New binding | Constructor invocation: New binding is applied when we create an object using Function Constructors.
+
+                4.a Function without Return
+                When we invoke a function using the new operator, internally the following steps are done:
+                    1. The constructor function is invoked and an object is internally created, inheriting the prototype of the constructor function used.
+                    2. The properties and functions are added to this object as per the function definition.
+                    3. This newly created object is returned and is assigned to the LHS variable at the functional call.
+
+                4.b Function with Return
+                The returned object is assigned to the LHS variable at the function call and the prototype of the constructor function is NOT inherited.
+
+            Arrow Functions:
+            Normal functions in JS abide by the 4 rules mentioned above. But ES6 introduces a special kind of function that does not use these rules, known as arrow functions.
+            Arrow functions use “lexical scoping” to figure out what the value of this should be. Lexical scoping is a fancy way of saying it uses “this” from the outer function in which it is defined.
+            Simply put, when an arrow function is invoked, JS literally takes the this value from the outer function where the arrow function is declared. I repeat, the outer function, NOT the outer object in which it is defined.
+                a. If the outer function is a normal function, this depends upon the type of binding of the outer function.
+                b. If the outer function is an arrow function, JS again checks for the next outer function and this process continues till the global object.
+
+            Conclusion:
+            The this value in a function depends on how the function is called.
+            Default Binding: Window Object
+            Implicit Binding: Object on the LHS of dot notation.
+            Explicit Binding: Object passed as first parameter in call(), apply(), bind().
+            New Binding: The LHS object in the function call will be referred to as this in the function.
+            Arrow functions simply use the this value from its surroundings.
+
+    - Prototypes:
+
+        Prototypal Class Pattern: Before "Class{}" arrived JavaScript, this was the way to use "Classes" on JS, by creating a constructor method, and the using the dot notation to invoked the prototype keyword as a way to add functions to the "Class" defined in the constructor function.
+
+    - Class {}:
+
+        A way to define classes like you can do in other programming languages, it's the same behavior that the prototypal class pattern but with an easier to read/use syntax.
 
 PRACTICE
 
