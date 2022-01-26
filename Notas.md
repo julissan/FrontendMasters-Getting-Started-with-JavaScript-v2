@@ -327,7 +327,3 @@ SCOPES & CLOSURES
     - Class {}:
 
         A way to define classes like you can do in other programming languages, it's the same behavior that the prototypal class pattern but with an easier to read/use syntax.
-
-PRACTICE
-
-WRAPPING UP
