@@ -199,7 +199,7 @@ TYPES & COERCION
 
     - Types Summary:
 
-        Like every other operation, is coercion helpfulin an equality  comparison or not?
+        Like every other operation, is coercion helpful in an equality comparison or not?
         You should be making critical thinking decisions for yourself an decide based on the situation you're using it.
 
         "==" is not about comparisons with unknown types.
@@ -233,7 +233,7 @@ SCOPES & CLOSURES
 
         Named Function expression:
 
-            var keyHandler = function(){
+            var keyHandler = function keyHandler(){
 
             };
 
@@ -255,7 +255,7 @@ SCOPES & CLOSURES
         It will become it's own scope block.
         Regularly used inside an "if statement"
 
-        Is a godd practice using it to avoid variables on the global scope accidentally beaing reassigned, the variables should have the smaller scope possible to use them properly.
+        Is a good practice using it to avoid variables on the global scope accidentally beaing reassigned, the variables should have the smaller scope possible to use them properly.
 
         Can be a very powerful tool for helping prevent bugs or problems to come back time later after the code was written.
 
@@ -269,8 +269,8 @@ SCOPES & CLOSURES
 
     - "this":
 
-        A function's "this" references the execution context for that call, determined entirely by  how the function was called.
-        Allows to give a function a dynamic context, to use the same function in different contexts baed on how you call the function. (Reusability principle)
+        A function's "this" references the execution context for that call, determined entirely by how the function was called.
+        Allows to give a function a dynamic context, to use the same function in different contexts based on how you call the function. (Reusability principle)
 
         this-aware function: Functions that contain the "this" keyword
 
