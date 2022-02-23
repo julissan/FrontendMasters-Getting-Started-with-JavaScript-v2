@@ -1,6 +1,6 @@
 # FrontendMasters-Getting-Started-with-JavaScript-v2
 
-FrontendMasters-Getting-Started-with-JavaScript-v2 Kyle Simpson
+FrontendMasters-Getting-Started-with-JavaScript-v2 Kyle Simpson (You Don't Know JS Yet)
 
 Class notes and exercises by Juan David Lis Santofimio, Juanuary 2022
 
